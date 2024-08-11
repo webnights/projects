@@ -1,0 +1,4 @@
+$activecolor: #1d8763;
+ $limecolor: rgb(239, 233, 233) ;
+$graycolor: #333333;
+

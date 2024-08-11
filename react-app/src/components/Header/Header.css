@@ -1,0 +1,16 @@
+.header
+{
+   
+    background: #b0acac;
+    padding: 20px;
+}
+.header__inner
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header span
+{
+    font-weight: 600;
+}

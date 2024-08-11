@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best form of all time</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+
+    <script defer src="./libs/inputmask.min.js"></script>
+    <script defer src="./libs/just-validate3.3.3.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script defer src="./js/app.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+       <div class="" id="targetElement" style="width: 80%;">
+
+       </div>
+        <section class="services">
+            <ul class="services__list">
+                <li class="services__item">
+                    <h2 class="services__name">Айкун для лица</h2>
+                    <div class="services__price-block">
+                        <div class="services__price">3600 Р.</div>
+                        <a href="" class="services__button">Заказать услугу</a>
+                    </div>
+                </li>
+                <li class="services__item">
+                    <h2 class="services__name">Айкун для тела</h2>
+                    <div class="services__price-block">
+                        <div class="services__price">2500 Р.</div>
+                        <a href="" class="services__button">Заказать услугу</a>
+                    </div>
+                </li>
+                <li class="services__item">
+                    <h2 class="services__name">Капелло</h2>
+                    <div class="services__price-block">
+                        <div class="services__price">2200 Р.</div>
+                        <a href="" class="services__button">Заказать услугу</a>
+                    </div>
+                </li>
+                <li class="services__item">
+                    <h2 class="services__name">Карбокситерапия</h2>
+                    <div class="services__price-block">
+                        <div class="services__price">1800 Р.</div>
+                        <a href="" class="services__button">Заказать услугу</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="form__section">
+            <form method="POST" action="# " class="form " enctype="multipart/form-data" >
+                <label class="form__label"><input type="text" class="form__input form__input-service"
+                        placeholder="Название услуги"></label>
+                <label class="form__label"> <input type="text" class="form__input form__input-name" name="Имя"
+                        data-validate-field="name" placeholder="Ваше имя"></label>
+                <label class="form__label"> <input type="email" class="form__input form__input-email" name="Почта"
+                        data-validate-field="email" placeholder="Ваша Почта"></label>
+                <label class="form__label"> <input type="tel" class="form__input form__input-tel" name="Телефон"
+                        data-validate-field="tel" placeholder="+7 (999) 999-99-99"></label>
+                <textarea name="Сообщение" class="form__textarea"
+                    placeholder="У вас остались вопросы? Вы можете задать их здесь"></textarea>
+                <button class="form__button">Отправить</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

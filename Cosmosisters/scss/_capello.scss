@@ -1,0 +1,108 @@
+.capello__hero {
+    background: $graycolor;
+    padding: calc(4vw + 80px) 0 4vw 0;
+}
+
+.capello__hero-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 3vw;
+
+    article{
+        background: $limecolor;
+        padding: 40px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+        flex-basis: 50%;
+        a{
+            text-align: center;
+            width: 40%;
+        }
+        p{
+            font-size: calc(16px + 4 * (100vw / 1700));
+        }
+        h2{
+            font-size: calc(20px + 20 * (100vw / 1700));
+            color: $activecolor;
+            font-weight: 700;
+        }
+        
+    }
+
+    img
+    {
+        padding: 40px;
+        max-width: 700px;
+        width: 100%;
+        
+    }
+}
+.capello__heroimage-box
+{
+    background: $activecolor;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordeon {
+    background: $graycolor;
+    padding: 0 0 4vw 0;
+}
+
+.accordeon__inner {
+    background: $limecolor;
+    border-radius: 20px;
+    padding: 40px 20px;
+}
+.accordeon__title {
+    text-align: center;
+    margin-bottom: 3vw;
+    position: relative;
+    &::after
+    {
+        content: "";
+        width: 15%;
+        height: 1px;
+        background: $graycolor;
+        position: absolute;
+        bottom: -20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.accordeon__list {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
+.accordeon__item {
+}
+.accordeon__trigger {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.accordeon__name {
+    font-size: calc(18px + 12 * (100vw / 1700));
+    font-weight: 700;
+    margin-bottom: 1vw;
+    color: $activecolor;    
+    position: relative;
+
+   
+}
+
+.accordeon__text {
+    font-size: calc(16px + 4 * (100vw / 1700));
+    
+}

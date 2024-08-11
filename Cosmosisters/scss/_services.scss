@@ -1,0 +1,244 @@
+.service {
+    background: $limecolor;
+    padding: 5.29vw 0;
+    line-height: 145%;
+
+}
+
+.service__title {
+    margin-bottom: 5.29vw;
+}
+
+.service__button-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: rgba($color: #000000, $alpha: 0.2);
+        position: absolute;
+        bottom: -30%;
+    }
+}
+
+.service__button {
+    background: transparent;
+    font-family: Palatino;
+    font-size: calc(25px + 6 * (100vw / 1700));
+    text-align: center;
+    width: 33.3333%;
+    position: relative;
+
+}
+
+.service__button--active {
+    transition: all .5s;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: $blackcolor;
+        position: absolute;
+        bottom: -30%;
+        left: 0;
+
+    }
+}
+
+.service__turns {
+    margin-top: 5.29vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding: 5vw 3vw;
+    border-radius: 20px;
+    box-shadow: $shadowstandart;
+}
+
+.service__turns--active {
+    display: flex;
+}
+
+.service__turns-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service__turns-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    white-space: no-wrap;
+
+    cursor: pointer;
+
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        align-items: flex-start;
+        transition: all .5s;
+        margin: 10px 0;
+        border: 1px solid #0000005b;
+        border-radius: 5px;
+    }
+
+    &:hover {
+        transition: all .5s;
+
+        .service__turns-title {
+            background: $activecolor;
+            color: $whitecolor;
+            padding: 10px;
+
+            &::after {
+
+                filter: saturate(0) brightness(100);
+
+            }
+        }
+    }
+
+}
+
+.service__turns-item--active {
+
+    transition: all .5s;
+
+    .service__turns-title {
+        background: $activecolor;
+        color: $whitecolor;
+        padding: 10px;
+
+        &::after {
+
+            transform: rotate(90deg);
+            filter: saturate(0) brightness(100);
+
+        }
+    }
+}
+
+.service__program {
+    font-size: calc(16px + 18 * (100vw/1700));
+    color: $activecolor;
+    font-weight: 700;
+    margin-top: 2vw;
+    margin-bottom: 20px;
+
+}
+
+.great__deals {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    h3 {
+        font-size: calc(20px + 10 * (100vw / 1700));
+        font-weight: 700;
+    }
+
+    img {
+        max-width: 30px;
+        animation: rotateStar 5s infinite linear;
+    }
+
+}
+
+@keyframes rotateStar {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.service__turns-title {
+    font-size: calc(18px + 6 * (100vw / 1700));
+    font-weight: 400;
+    transition: all .5s;
+    white-space: pre-line;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+
+    &::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: url("/images/icons/arrow.png") 0 0 / 100% no-repeat;
+        display: block;
+        transition: all .5s;
+
+    }
+}
+
+.service__turns-price {
+    font-size: calc(16px + 6 * (100vw / 1700));
+}
+
+.service__turns-price--new {
+    position: relative;
+
+
+
+    &::after
+    {
+        content: "";
+        width: 110%;
+        height: 3px;
+        background: $activecolor;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.service__turns-time {
+    font-size: calc(16px + 6 * (100vw / 1700));
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background: url("/images/icons/clock.png") 0 0 / 100% no-repeat;
+        display: block;
+    }
+}
+
+.service__turns-button {
+    margin: 0px 0 30px 20px;
+
+}
+
+
+
+.service__name {
+    font-size: calc(20px + 30 * (100vw / 1700));
+    font-family: Palatino;
+}

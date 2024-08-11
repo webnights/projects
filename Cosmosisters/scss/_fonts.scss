@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Palatino";
+    src: local("Palatino"),
+      local("Palatino"),
+      url("/fonts/Palatino/Palatino.woff") format("woff"),
+      url("/fonts/Palatino/Palatino.ttf") format("ttf");
+    font-weight: normal;
+  }
+@font-face {
+    font-family: "Jost";
+    src: local("Jost-Light"),
+      local("Jost-Light"),
+      url("/fonts/Jost/Jost-Light.woff2") format("woff2"),
+      url("/fonts/Jost/Jost-Light.woff") format("woff"),
+      url("/fonts/Jost/Jost-Light.ttf") format("ttf");
+    font-weight: 300;
+  }
+@font-face {
+    font-family: "Jost";
+    src: local("Jost-Regular"),
+      local("Jost-Light"),
+      url("/fonts/Jost/Jost-Regular.woff2") format("woff2"),
+      url("/fonts/Jost/Jost-Regular.woff") format("woff"),
+      url("/fonts/Jost/Jost-Regular.ttf") format("ttf");
+    font-weight: 400;
+  }

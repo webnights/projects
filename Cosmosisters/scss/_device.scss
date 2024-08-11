@@ -1,0 +1,109 @@
+.device {
+    background: $limecolor;
+    padding: 5.29vw  0;
+}
+.device__title {
+    color: $blackcolor;
+}
+.device__tabs {
+    margin: 0 auto;
+}
+.device__tabs-buttons {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    
+}
+.device__tabs-button {
+    font-size: calc(18px + 5 * (100vw / 1700));
+    background: $limecolor;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.325);
+    color: $blackcolor;
+    &:hover
+    {   
+        background: $activecolor;
+        color: $whitecolor;
+        transform: scale(1.1);
+    }
+}
+.device__tabs-button--active
+{
+    background: $activecolor;
+    color: $whitecolor;
+    transform: scale(1.1);
+}
+.device__tabs-body {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.325);
+    background: $limecolor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5vw;
+    border-radius: 50px;
+    gap: 30px;
+    display: none;
+}
+.device__tabs-body--active
+{
+    display: flex;
+}
+
+
+.device__tabs-info {
+    text-align: left;
+}
+.device__tabs-title {
+    font-size: calc(20px + 22 * (100vw / 1700));
+    margin-bottom: 2vw;
+}
+.device__tabs-text {
+    margin-bottom: 30px;
+    font-size: calc(14px + 6 * (100vw / 1700));
+}
+.device__slider-wrapper
+{
+    min-height: 100% !important;
+}
+.device__slider{
+    width: 40vw;
+    background: $activecolor;
+    background-image: url(/images/Зерно.png);
+    border-radius: 20px;
+    .splide__arrow{
+
+        svg{
+            fill: $whitecolor;
+            transition: all .4s;
+
+        }
+        outline: none !important;
+        background: $activecolor !important;
+        border: 2px solid $whitecolor;
+        color: $whitecolor;
+        opacity: 1 !important;
+        width: 40px;
+        height: 40px;
+        transition: all .4s;
+        &:hover{
+            background: $whitecolor !important;
+            svg{
+                fill: $blackcolor;
+            }
+        }
+    }
+    .splide.is-focus-in .splide__arrow:focus{
+        outline: none ;
+    }
+}
+.device__slider-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+   img{
+    width: 100%;
+   }
+}
+

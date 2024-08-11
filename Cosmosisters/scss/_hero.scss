@@ -1,0 +1,60 @@
+.hero{
+    background: url("/images/hero2.jpg") 100% 0 / cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.hero__overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: #00000068;
+}
+
+.hero__inner {
+    display: flex;
+    gap: 10px;
+}
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $limecolor;
+    gap: 20px;
+    z-index: 2;
+    padding: 0 20px;
+}
+.hero__title{
+    font-size: calc(30px + 50 * (100vw / 1700));
+}
+.hero__subtitle
+{
+    font-size: calc(20px + 35 * (100vw / 1700));
+    text-transform: uppercase;
+}
+.hero__text {
+    font-size: calc(18px +  6 * (100vw / 1700));
+}
+.hero__quote {
+    font-size: calc(18px +  8 * (100vw / 1700));
+    background: $activecolor;
+    padding: 20px;
+    border-radius: 10px;
+    color: $limecolor;
+    text-align: center;
+}
+.hero__button
+{
+    font-size: calc(18px +  8 * (100vw / 1700));
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    border: 2px solid $limecolor;
+}
